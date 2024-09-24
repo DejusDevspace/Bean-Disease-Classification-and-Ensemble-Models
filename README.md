@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This document presents a comparison of different models trained for image classification on a bean
+This repository features a comparison of different models trained for image classification on a bean
 disease image dataset. The models include:
 
 - Basic Machine Learning (ML) algorithms
