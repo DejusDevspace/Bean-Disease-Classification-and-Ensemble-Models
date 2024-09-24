@@ -40,30 +40,24 @@ The models were evaluated using the following metrics:
 
 ## Results on Test Data
 
-| Model                                            | Accuracy | Precision | Recall | F1-Score |
-| ------------------------------------------------ | -------- | --------- | ------ | -------- |
-| Logistic Regression                              | 0.66     | 0.66      | 0.66   | 0.66     |
-| K-Nearest Neighbors                              | 0.54     | 0.63      | 0.55   | 0.54     |
-| Support Vector Machine                           | 0.68     | 0.68      | 0.68   | 0.68     |
-| Naive Bayes                                      | 0.60     | 0.61      | 0.60   | 0.60     |
-| CNN (ResNet50)                                   | 0.98     | 0.98      | 0.98   | 0.98     |
-| Hybrid Model (Resnet50 & KNN)                    | 0.70     | 0.72      | 0.71   | 0.67     |
-| Hybrid Model (VGG16 & Logistic Regression)       | 0.91     | 0.91      | 0.91   | 0.91     |
-| Hybrid Model (VGG16 & SVM)                       | 0.84     | 0.86      | 0.84   | 0.84     |
-| Hybrid Model (VGG19 & Naive Bayes)               | 0.48     | 0.59      | 0.48   | 0.48     |
-| Hybrid KNN-SVM-Logistic-Regression Stacked Model | 0.71     | 0.71      | 0.71   | 0.71     |
+| Model                                             | Accuracy | Precision | Recall | F1-Score |
+|---------------------------------------------------|----------|-----------|--------|----------|
+| Logistic Regression                               | 0.66     | 0.66      | 0.66   | 0.66     |
+| K-Nearest Neighbors                               | 0.54     | 0.63      | 0.55   | 0.54     |
+| Support Vector Machine                            | 0.68     | 0.68      | 0.68   | 0.68     |
+| Naive Bayes                                       | 0.60     | 0.61      | 0.60   | 0.60     |
+| CNN (ResNet50)                                    | 0.98     | 0.98      | 0.98   | 0.98     |
+| Hybrid Model (Resnet50 & KNN)                     | 0.70     | 0.72      | 0.71   | 0.67     |
+| Hybrid Model (VGG16 & Logistic Regression)        | 0.91     | 0.91      | 0.91   | 0.91     |
+| Hybrid Model (VGG16 & SVM)                        | 0.84     | 0.86      | 0.84   | 0.84     |
+| Hybrid Model (VGG19 & Naive Bayes)                | 0.48     | 0.59      | 0.48   | 0.48     |
+| Hybrid KNN-SVM-Logistic-Regression Stacked Model  | 0.71     | 0.71      | 0.71   | 0.71     |
+| Hybrid VGG16-SVM-Logistic-Regression Voting Model | 0.84     | 0.86      | 0.84   | 0.84     |
+| Hybrid ResNet50-SVM-Naive-Bayes Stacked Model     | 0.91     | 0.92      | 0.91   | 0.91     |
+| Hybrid ResNet50-KNN-Naive-Bayes Stacked Model     | 0.76     | 0.76      | 0.76   | 0.76     |
+| Hybrid Model (SVM $ Logistic Regression) Voting   | 0.64     | 0.64      | 0.63   | 0.64     |
 
-## Analysis
-
-- Logistic Regression had an accuracy of 1.0 on the train dataset but performed relatively poorly on the
-  test dataset, which indicates an overfitting to the data
-- Support Vector Machine (SVC) Classifier also had an overfitting to the training data
-- The hybrid models of Logistic Regression and Support Vector Machine both performed well on the training
-  data with 1.0 accuracy and relatively well on the test data
-- VGG19 and Naive bayes hybrid model showed overfitting to training data with accuracy of 0.99 and a
-  poor 0.48 on the test data
-- The stacked knn-svm model returned 1.0 accuracy on the training data and 0.71 on the test data,
-  indicating slight overfitting
+Some of the models above overfit to the training data, and performed not as well on the test data.
 
 ## Analysis of Image Classification Models
 
