@@ -41,7 +41,7 @@ The models were evaluated using the following metrics:
 ## Results on Test Data
 
 | Model                                             | Accuracy | Precision | Recall | F1-Score |
-|---------------------------------------------------|----------|-----------|--------|----------|
+| ------------------------------------------------- | -------- | --------- | ------ | -------- |
 | Logistic Regression                               | 0.66     | 0.66      | 0.66   | 0.66     |
 | K-Nearest Neighbors                               | 0.54     | 0.63      | 0.55   | 0.54     |
 | Support Vector Machine                            | 0.68     | 0.68      | 0.68   | 0.68     |
@@ -56,6 +56,7 @@ The models were evaluated using the following metrics:
 | Hybrid ResNet50-SVM-Naive-Bayes Stacked Model     | 0.91     | 0.92      | 0.91   | 0.91     |
 | Hybrid ResNet50-KNN-Naive-Bayes Stacked Model     | 0.76     | 0.76      | 0.76   | 0.76     |
 | Hybrid Model (SVM $ Logistic Regression) Voting   | 0.64     | 0.64      | 0.63   | 0.64     |
+| Hybrid Model KNN-Logistic-Regression-Naive-Bayes  | 0.66     | 0.66      | 0.66   | 0.66     |
 
 Some of the models above overfit to the training data, and performed not as well on the test data.
 
